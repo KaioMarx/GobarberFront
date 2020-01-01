@@ -28,9 +28,20 @@ export const Content = styled.div`
       color: #fff;
       margin: 0 0 10px;
 
+      &:focus {
+        border: solid 3px #7159c1;
+      }
+
       &::placeholder {
         color: rgba(255, 255, 255, 0.7);
       }
+    }
+
+    span {
+      color: #fb6f91;
+      align-self: flex-start;
+      margin-bottom: 10px;
+      font-weight: bold;
     }
 
     button {
@@ -46,7 +57,7 @@ export const Content = styled.div`
 
       &:hover {
         background: ${darken(0.1, '#3b9eff')};
-      } 
+      }
     }
 
     a {
@@ -58,6 +69,6 @@ export const Content = styled.div`
       &:hover {
         opacity: 1;
       }
-    } 
+    }
   }
 `;
