@@ -7,13 +7,13 @@ import './config/ReactotronConfig';
 
 import Routes from './routes';
 
-import store from '~/store/index';
+import Store from '~/store/index';
 
 import GlobalStyle from './styles/global';
 
 function App() {
   return (
-    <Provider store={store}>
+    <Provider store={Store}>
       <Router history={history}>
         <Routes />
         <GlobalStyle />
