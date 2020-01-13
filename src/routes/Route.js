@@ -5,13 +5,15 @@ import { Route, Redirect } from 'react-router-dom';
 import AuthLayout from '~/pages/_Layouts/auth';
 import DefaultLayout from '~/pages/_Layouts/default';
 
+import { store } from '~/store';
+
 // componente de restricao de rotas, like a Router/router-dom
 export default function RouteWrapper({
   component: Component,
   isPrivate = false,
   ...rest
 }) {
-  const signed = false;
+  const { signed } = store.getState().auth;
 
   if (!signed && isPrivate) {
     return <Redirect to="/" />;
