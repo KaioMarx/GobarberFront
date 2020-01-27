@@ -26,6 +26,11 @@ export const Content = styled.div`
     a {
       color: #7159c1;
       font-weight: bold;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 
@@ -55,6 +60,11 @@ export const Profile = styled.div`
       margin-top: 2px;
       font-size: 12px;
       color: #333;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 
